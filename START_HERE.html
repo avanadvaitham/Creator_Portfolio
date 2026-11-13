@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Start here · Publish public portfolios with GitHub Pages</title><style>body{margin:0;background:#f4f5ef;color:#233d35;font:14px/1.85 Arial,sans-serif}main{max-width:940px;margin:auto;padding:40px 24px;overflow-wrap:anywhere}h1,h2{font-family:Georgia,serif;line-height:1.25}h1{font-size:38px}h2{font-size:26px;margin-top:32px}a{color:#315f4c}pre{white-space:pre-wrap;background:#fffefa;border:1px solid #dce3d5;border-radius:8px;padding:18px;font-size:12px}code{overflow-wrap:anywhere}li{margin:7px 0}strong{color:#315f4c}@media(max-width:500px){h1{font-size:30px}main{padding:28px 19px}}@media print{body{background:white}main{padding:0}h2{break-after:avoid}}</style></head><body><main><p><a href="website/index.html">Open the local public-portfolio preview →</a></p><h1>Put your public portfolios online — GitHub Pages</h1>
+<h2>What this kit does</h2>
+<p>This is <strong>public-only static hosting</strong>, not the working Creator Desk. The four portfolio pages, public media kits and proposed rate cards can be opened on other laptops/phones after publishing. Your laptop can be off. There is no Desk login, database, 470-draft content book, private upload, AI key or backend in the upload folder. The private Desk stays on your laptop.</p>
+<p>GitHub Pages is available with GitHub Free for <strong>public repositories</strong>. Everyone can read/download the repository files and their history. This kit is for your portfolio showcase, not a paid SaaS or payment-processing site. Official documentation: <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">1</a>.</p>
+<p><strong>Nothing has been uploaded or made live by preparing this ZIP.</strong> GitHub publishing is not supported by the tools in this chat, so the owner must perform the following account steps. Never send passwords, tokens, recovery codes or card details in chat.</p>
+<h2>Before you publish</h2>
+<ul>
+<li>Review the existing videos, images, child/family privacy, brand/music and portfolio-reuse permissions. Source visibility is not reuse permission.</li>
+<li>Verify the proposed rates, five creator-reported cooking achievements and public wording. Kerala Tourism's unspecified year stays unspecified.</li>
+<li><strong>No public business email/WhatsApp is configured in the current snapshots.</strong> If you want enquiries, supply a business contact explicitly for publication, add it in your private Portfolio Studio and regenerate the public exports. Never copy an account email into public files without that choice.</li>
+<li>Preview banners and <code>noindex, nofollow</code> are intentionally retained from the existing portfolio settings. The links can still be opened publicly; <code>noindex</code> is NOT a password or privacy protection. Review/approve details before removing preview labels or enabling indexing.</li>
+<li>Tech/devotional sample galleries remain empty rather than fabricated. The original 20 unique works are preserved; Kidzola appears in both requested portfolios.</li>
+</ul>
+<h2>Step 1 — Create a new PUBLIC repository</h2>
+<ol>
+<li>Sign in to https://github.com using your own account.</li>
+<li>Click <strong>+ → New repository</strong>.</li>
+<li>Suggested repository name: <strong>creator-portfolios</strong>. If that name already exists, choose a fresh name; do not overwrite an existing project.</li>
+<li>Choose <strong>Public</strong>. The free Pages route requires this; do not put private app material in it.</li>
+<li>You can enable <strong>Add a README</strong> to create the main branch. Click <strong>Create repository</strong>.</li>
+</ol>
+<p>No Render account, paid backend or purchased domain is needed for this static stage. Check GitHub's applicable plan/usage limits; this does not include hosting the private Flask app.</p>
+<h2>Step 2 — Upload ONLY the website folder's CONTENTS</h2>
+<ol>
+<li>Extract <strong>Public_Portfolios_GitHub_Pages_Kit.zip</strong> on a laptop.</li>
+<li>Open its <strong>website</strong> folder.</li>
+<li>In the new repository, select <strong>Add file → Upload files</strong>. For an empty repository, use the <strong>uploading an existing file</strong> link.</li>
+<li>Drag <strong>the contents inside website</strong> into the upload area: <code>index.html</code>, the four portfolio folders and <code>.nojekyll</code> if shown. Keep folders intact.</li>
+<li>Commit directly to <strong>main</strong> using <strong>Commit changes</strong>.</li>
+</ol>
+<p><strong>Correct repository layout:</strong></p>
+<pre><code>index.html
+.nojekyll
+avananusha/index.html
+avananusha/media-kit.html
+avananusha/rate-card.html
+avanpakasastram/index.html
+avanpakasastram/media-kit.html
+avanpakasastram/rate-card.html
+avanadvaitham/index.html
+avanadvaitham/media-kit.html
+avanadvaitham/rate-card.html
+myratechies/index.html
+myratechies/media-kit.html
+myratechies/rate-card.html
+</code></pre>
+<p><strong>Wrong:</strong> uploading the ZIP itself, putting everything under an extra <code>website/</code> folder in the repository, or uploading <code>Creator_Desk_Final_Kit.zip</code>, database, private scripts, backups or credentials. The root <code>index.html</code> must be visible directly in the repository. <code>.nojekyll</code> is a harmless empty marker; no custom workflow is required for this plain HTML kit.</p>
+<h2>Step 3 — Enable Pages</h2>
+<ol>
+<li>Open the repository's <strong>Settings</strong> tab.</li>
+<li>In the sidebar select <strong>Pages</strong>.</li>
+<li>Under <strong>Build and deployment → Source</strong>, choose <strong>Deploy from a branch</strong>.</li>
+<li>Select <strong>main</strong> and <strong>/(root)</strong>, then <strong>Save</strong>.</li>
+<li>Wait for deployment to finish; check <strong>Actions</strong> if a build is still pending or fails.</li>
+<li>Return to <strong>Settings → Pages</strong>. Open the actual published URL GitHub shows. Use <strong>Enforce HTTPS</strong> if that option is available and not already enforced.</li>
+</ol>
+<p>GitHub documents selecting a branch/root folder as a Pages publishing source here: <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">1</a>.</p>
+<h2>Your link structure</h2>
+<p>The following are <strong>TEMPLATES, NOT LIVE LINKS</strong>. Replace YOUR-USERNAME with your real GitHub username, and creator-portfolios with the exact repository name you chose. Use the actual URL shown by Pages if you already use a custom domain.</p>
+<pre><code>Home:
+https://YOUR-USERNAME.github.io/creator-portfolios/
+
+Avananusha:
+https://YOUR-USERNAME.github.io/creator-portfolios/avananusha/
+
+Avanpakasastram:
+https://YOUR-USERNAME.github.io/creator-portfolios/avanpakasastram/
+
+Avanadvaitham:
+https://YOUR-USERNAME.github.io/creator-portfolios/avanadvaitham/
+
+MyraTechies:
+https://YOUR-USERNAME.github.io/creator-portfolios/myratechies/
+</code></pre>
+<p>Each portfolio also has <code>media-kit.html</code> and <code>rate-card.html</code> in its own folder. These public HTML documents can be printed to PDF from a browser. Existing portfolio buttons retain their portable HTML download behavior.</p>
+<h2>Step 4 — Check on laptop and mobile</h2>
+<ul>
+<li>Open all four links and the home page, then use the All portfolios link to return.</li>
+<li>Check Avananusha's six collections, the one distinct Johnson baby-oil source, the toy sources and shared Kidzola.</li>
+<li>Check all five supplied cooking achievements; no Kerala Tourism year is invented.</li>
+<li>Tech/devotional pages must not contain fabricated videos.</li>
+<li>Read the proposed rate cards and media-kit links.</li>
+<li>Video players contact a third-party platform only after visitor consent. Actual playback may require platform login or depend on region/browser; original source links remain available.</li>
+<li>The enquiry form only prepares text in the browser. It is not a hosted inbox or automatic email service. No business email/WhatsApp is configured yet.</li>
+<li>A mobile browser does not need your laptop to remain on once GitHub Pages publishes the static files.</li>
+</ul>
+<h2>Later updates</h2>
+<p>These are <strong>snapshots, not live sync</strong>. Editing Creator Desk, Excel, Google Sheets or an old downloaded HTML file does not update the published repository.</p>
+<p>After changing public details in the working Desk, run these in the activated laptop environment:</p>
+<pre><code>python export_public.py
+python prepare_public_hosting.py
+</code></pre>
+<p>If the earlier owner ZIP does not contain the second script, use the included helper from this kit: put <code>prepare_public_hosting.py</code> beside <code>creator_desk.py</code> first. Upload the regenerated website contents to the same repository/branch and commit. Never upload private owner files. Public Git history can retain old content after deletion; remove private information before the first upload.</p>
+<p>This process makes only your portfolios live. The working Desk, private video review and optional AI still require a separate secured backend deployment later. No paid hosting or external publishing was performed while preparing this kit.</p></main></body></html>
