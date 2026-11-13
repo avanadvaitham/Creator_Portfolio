@@ -1,0 +1,1 @@
+{% if brand.get('rate_addons') %}<div class="rate-addons"><h3>Optional extras & licensing</h3><div class="addon-grid">{% for row in brand.rate_addons %}<article><h4>{{ row.name }}</h4><b>{{ row.price }}</b><p>{{ row.scope }}</p></article>{% endfor %}</div></div>{% endif %}

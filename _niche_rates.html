@@ -1,0 +1,10 @@
+{% if brand.get('niche_rates') %}
+<div class="niche-rates">
+  <h3>Niche-by-niche starting fees</h3>
+  <p class="table-note">New UGC creation only · {{ brand.currency }} · one product/campaign per brief · no creator posting included</p>
+  <div class="rate-table-scroll"><table class="niche-table"><thead><tr><th scope="col">Niche & scope</th><th scope="col">One video</th><th scope="col">Three-video bundle</th></tr></thead><tbody>
+  {% for row in brand.niche_rates %}<tr><th scope="row">{{ row.niche }}<span>{{ row.scope }}</span></th><td>{{ rate_label(row.amount) }}</td><td>{{ rate_label(row.bundle_amount) }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  <p class="table-note">Bundles are three distinct agreed videos in a batched shoot. A hook-variation package is different: it reuses one core edit. Child appearances, travel and special production costs are not included.</p>
+</div>
+{% endif %}
